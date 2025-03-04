@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="0slot helps you send transactions at the most competitive speed. +2 slot? +1 slot? No! It's 0 slot! Try it for free for the first week!">
+  <link rel="canonical" href="https://0slot.trade/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./res/favicon.ico" />
+  <title>0slot | Even Faster Solana Transactions</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1042515625"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-1042515625');
+  </script>
+  <!-- Event snippet for 网页浏览 conversion page -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-1042515625/u6ACCJ3_yqEaEKmNjvED'});
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T53JFFQ0NF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T53JFFQ0NF');
+  </script>
+  
+  <!-- Baidu analytics -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?00136f970e4963a731f96948d2687693";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+  <!-- Schema.org metadata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "0slot Solana Accelerator",
+    "operatingSystem": "Blockchain",
+    "applicationCategory": "Crypto API",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  
+  <!-- Twitter conversion tracking base code -->
+  <script>
+  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  twq('config','p620x');
+  </script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #10b981;
+      --dark: #111827;
+      --light: #f9fafb;
+      --gray: #6b7280;
+      --gray-light: #e5e7eb;
+      --gray-dark: #374151;
+      --bg-gradient: linear-gradient(135deg, rgba(99, 102, 241, 0.8), rgba(79, 70, 229, 0.9));
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --radius: 0.5rem;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background-color: var(--light);
+      line-height: 1.6;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow-sm);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    
+    .logo-text {
+      font-size: 1.75rem;
+      font-weight: 700;
+      background: linear-gradient(to right, var(--primary), var(--primary-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      margin-right: 2rem;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--gray-dark);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      font-weight: 500;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+      text-decoration: none;
+    }
+    
+    .btn-primary {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+    }
+    
+    .btn-secondary {
+      background-color: white;
+      color: var(--dark);
+      border: 1px solid var(--gray-light);
+    }
+    
+    .btn-secondary:hover {
+      background-color: var(--gray-light);
+      transform: translateY(-1px);
+    }
+    
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+    
+    /* Hero section */
+    .hero {
+      background: var(--bg-gradient);
+      color: white;
+      padding: 8rem 0 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      width: 50%;
+      height: 70%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      z-index: 0;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      left: -10%;
+      width: 60%;
+      height: 60%;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      z-index: 0;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero h1 span {
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
+    }
+    
+    .hero h4 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+    }
+    
+    .hero-cta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .hero-cta span {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    /* Features section */
+    .features {
+      padding: 5rem 0;
+    }
+    
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+    
+    .section-header p {
+      font-size: 1.2rem;
+      color: var(--gray);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    
+    .feature-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 100%;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .feature-card h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-card p {
+      color: var(--gray);
+    }
+    
+    /* Comparison section */
+    .comparison {
+      padding: 5rem 0;
+      background-color: #f3f4f6;
+    }
+    
+    .tab-container {
+      margin-top: 2rem;
+    }
+    
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .tab {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background: white;
+      cursor: pointer;
+      border-radius: var(--radius);
+      font-weight: 500;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .tab.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+    
+    .tab-content {
+      position: relative;
+      max-width: 100%;
+      min-height: 200px;
+  }
+  
+    .tab-item {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.5s;
+  }
+    
+    .tab-item.active {
+      opacity: 1;
+    }
+    
+    .tab-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+    
+    /* Detailed features */
+    .detailed-features {
+      padding: 5rem 0;
+    }
+    
+    .feature-showcase {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    
+    .feature-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .feature-item:nth-child(even) {
+      direction: rtl;
+    }
+    
+    .feature-item:nth-child(even) .feature-content {
+      direction: ltr;
+    }
+    
+    .feature-content h4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--primary-dark);
+    }
+    
+    .feature-content p {
+      color: var(--gray);
+    }
+    
+    .feature-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.3s;
+    }
+    
+    .feature-image:hover {
+      transform: scale(1.02);
+    }
+    
+    .feature-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    /* Pricing section */
+    .pricing {
+      padding: 5rem 0;
+      background-color: #f3f4f6;
+    }
+    
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .pricing-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .pricing-card h3 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--primary-dark);
+    }
+    
+    .pricing-card .price {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+    }
+    
+    .pricing-card .amount {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    
+    .pricing-card .period {
+      font-size: 1rem;
+      color: var(--gray);
+      margin-left: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .pricing-card .annual-price {
+      font-size: 0.875rem;
+      color: var(--gray);
+      margin-bottom: 2rem;
+    }
+    
+    .pricing-card ul {
+      list-style: none;
+      margin-bottom: 2rem;
+      flex: 1;
+    }
+    
+    .pricing-card li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      color: var(--gray-dark);
+    }
+    
+    .pricing-card li svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.75rem;
+      color: var(--secondary);
+      flex-shrink: 0;
+    }
+    
+    /* Contact section */
+    .contact {
+      padding: 5rem 0;
+      background: var(--bg-gradient);
+      color: white;
+      text-align: center;
+    }
+    
+    .contact-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .contact h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+    }
+    
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contact .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .contact .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .contact .small-text {
+      font-size: 0.875rem;
+      opacity: 0.7;
+    }
+    
+    .contact a {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    
+    /* Footer */
+    footer {
+      padding: 2rem 0;
+      background-color: var(--dark);
+      color: var(--gray-light);
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-content p {
+      font-size: 0.875rem;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .footer-links a {
+      color: var(--gray-light);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color 0.2s;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 2000;
+      padding: 2rem;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    .mobile-menu-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .mobile-menu-links a {
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: var(--gray-dark);
+      font-weight: 500;
+    }
+
+    .mobile-menu-links .btn {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    
+    /* Hidden content (for SEO & wallet addresses) */
+    .hidden-content {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+      
+      .feature-item {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .feature-item:nth-child(even) {
+        direction: ltr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .mobile-toggle {
+        display: block;
+      }
+      
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+      
+      .hero h4 {
+        font-size: 1rem;
+      }
+      
+      .section-header h2 {
+        font-size: 2rem;
+      }
+      
+      .hero-cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .contact-buttons {
+        flex-direction: column;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+    }
+    
+    /* Utilities */
+    .text-gradient {
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <span class="logo-text">0Slot</span>
+        </a>
+        <div class="nav">
+          <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#comparison">Results</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="docs.php">Documentation</a>
+          </div>
+          <a href="login.php" class="btn btn-primary">Sign In</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Open menu">≡</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close menu">✕</button>
+    <div class="mobile-menu-links">
+      <a href="#features">Features</a>
+      <a href="#comparison">Results</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a href="docs.php">Documentation</a>
+      <a href="login.php" class="btn btn-primary">Sign In</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Even Faster <span>Solana Transactions</span></h1>
+        <h4>Send transactions at the most competitive speed. +2 slot? +1 slot? No! It's 0 slot!</h4>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-secondary">Get Started</a>
+          <span>Try for free in the first week!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose 0slot?</h2>
+        <p>Packed with Features for a Seamless Transaction Experience</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6366F1" stroke-width="2"/>
+            <path d="M8 12H16M16 12L12 8M16 12L12 16" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h4>Global Infrastructure</h4>
+          <p>We provide endpoints in Frankfurt, Amsterdam, and New York for worldwide low-latency access.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5Z" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 9V15M9 12H15" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h4>Largest SWQoS Pool</h4>
+          <p>Industry-leading Stake Weighted Quality of Service for unparalleled transaction performance.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h4>High TPS Capacity</h4>
+          <p>Custom TPS based on your budget, ensuring scalability for any project size or requirements.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1V23" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h4>Competitive Pricing</h4>
+          <p>High-performance services at prices that won't break the bank, with flexible plans for all needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison" id="comparison">
+    <div class="container">
+      <div class="section-header">
+        <h2>See the Difference Yourself</h2>
+        <p>In the actual operations of Sniper and Arbitrage for our clients, 0slot fully leads the competition!</p>
+      </div>
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab active" onclick="switchTab(0)">Sniper</button>
+          <button class="tab" onclick="switchTab(1)">Arbitrage 1</button>
+          <button class="tab" onclick="switchTab(2)">Arbitrage 2</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-item active">
+            <img src="./res/1.png" alt="Sniper Example">
+          </div>
+          <div class="tab-item">
+            <img src="./res/2.png" alt="Arbitrage 1 Example">
+          </div>
+          <div class="tab-item">
+            <img src="./res/3.png" alt="Arbitrage 2 Example">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Features Section -->
+  <section class="detailed-features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Powerful Features</h2>
+        <p>Built to enhance speed, scalability, and flexibility for every transaction.</p>
+      </div>
+      <div class="feature-showcase">
+        <div class="feature-item">
+          <div class="feature-content">
+            <h4>Easy Integration</h4>
+            <p>Transition from your existing services seamlessly and effortlessly with our easy-to-use API, available via HTTP. Our straightforward integration process gets you up and running in minutes, not days.</p>
+          </div>
+          <div class="feature-image">
+            <img src="./res/feature1.png" alt="Easy Integration">
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-content">
+            <h4>Cost-per-transaction Model</h4>
+            <p>Simply include our 0slot Tip IX with at least 0.0001 SOL. Our API will validate you and land your transaction with lightning speed. Higher fees mean higher priority and quicker landing, giving you complete control over transaction priority.</p>
+          </div>
+          <div class="feature-image">
+            <img src="./res/feature2.png" alt="Cost-per-transaction Model">
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-content">
+            <h4>Dedicated SWQoS</h4>
+            <p>Every user is allocated a dedicated amount of Stake Weighted Quality of Service that is not shared with others. With our high capacity infrastructure, we can service thousands of clients with our existing stake, ensuring consistent performance at scale.</p>
+          </div>
+          <div class="feature-image">
+            <img src="./res/feature3.png" alt="Dedicated SWQoS">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Plan Comparison</h2>
+        <p>Explore our flexible options - try risk-free and upgrade or downgrade anytime.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Trial</h3>
+          <div class="price">
+            <div class="amount">$0</div>
+            <div class="period">/week</div>
+          </div>
+          <div class="annual-price">
+            Contact Sales, try for free in the first week!
+          </div>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              5 TPS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              Dedicated SWQoS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              0.0001 SOL Tip
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Entry</h3>
+          <div class="price">
+            <div class="amount">$280</div>
+            <div class="period">/month</div>
+          </div>
+          <div class="annual-price">
+            $3,200 Billed annually
+          </div>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              5 TPS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              Dedicated SWQoS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              0.0001 SOL Tip
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Intermediate</h3>
+          <div class="price">
+            <div class="amount">$700</div>
+            <div class="period">/month</div>
+          </div>
+          <div class="annual-price">
+            $8,100 Billed annually
+          </div>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              20 TPS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              Dedicated SWQoS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              0.0001 SOL Tip
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Advanced</h3>
+          <div class="price">
+            <div class="amount">$1,400</div>
+            <div class="period">/month</div>
+          </div>
+          <div class="annual-price">
+            $16,000 Billed annually
+          </div>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              50 TPS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              Dedicated SWQoS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              0.0001 SOL Tip
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Ready to Supercharge Your Solana Transactions?</h2>
+        <p>Be among the first to experience lightning-fast Solana transactions. No commitment, just pure speed.</p>
+        <div class="contact-buttons">
+          <a href="<?=$customerService?>" class="btn btn-secondary">Create a Free Account</a>
+          <a href="<?=$customerService?>" class="btn btn-primary">Contact Sales</a>
+        </div>
+        <p class="small-text">By signing up, you agree to our <a href="#">Terms & Conditions</a></p>
+        <p class="small-text st-contact">
+          If you want to create a free account (<strong>try for free in the first week!</strong>), contact sales, or have any inquiries, please contact us via Discord or X.<br><br>
+          Discord: <a href="<?=$customerService?>"><?=$customerService?></a><br>
+          X: <a href="https://x.com/0slot_trade">https://x.com/0slot_trade</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 0slot. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Status</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Hidden Content for SEO and Wallet Addresses -->
+  <div class="hidden-content">
+    <p>DiTmWENJsHQdawVUUKnUXkconcpW4Jv52TnMWhkncF6t</p>
+    <p>HRyRhQ86t3H4aAtgvHVpUJmw64BDrb61gRiKcdKUXs5c</p>
+    <p>7y4whZmw388w1ggjToDLSBLv47drw5SUXcLk6jtmwixd</p>
+    <p>J9BMEWFbCBEjtQ1fG5Lo9kouX1HfrKQxeUxetwXrifBw</p>
+    <p>8U1JPQh3mVQ4F5jwRdFTBzvNRQaYFQppHQYoH38DJGSQ</p>
+    <p>Eb2KpSC8uMt9GmzyAEm5Eb1AAAgTjRaXWFjKyFXHZxF3</p>
+    <p>FCjUJZ1qozm1e8romw216qyfQMaaWKxWsuySnumVCCNe</p>
+    <p>ENxTEjSQ1YabmUpXAdCgevnHQ9MHdLv8tzFiuiYJqa13</p>
+    <p>6rYLG55Q9RpsPGvqdPNJs4z5WTxJVatMB8zV3WJhs5EK</p>
+    <p>Cix2bHfqPcKcM233mzxbLk14kSggUUiz2A87fJtGivXr</p>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+  // get cs  
+  fetch('get_customer_service.php')
+      .then(response => response.json())
+      .then(data => {
+          if (data.code === 0) {
+              const customerService = data.data;
+              // 更新按钮链接
+              const contactButtons = document.querySelectorAll('.contact-buttons a');
+              contactButtons.forEach(button => {
+                  button.href = customerService;
+              });
+
+              // 更新Discord链接
+              const discordLink = document.querySelector('.st-contact a:first-of-type');
+              discordLink.href = customerService;
+              discordLink.textContent = customerService;
+          } else {
+              console.error('Error:', data.data);
+          }
+      })
+      .catch(error => {
+          console.error('Fetch error:', error);
+      });
+
+    // Mobile menu toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileClose = document.querySelector('.mobile-menu-close');
+    const mobileLinks = document.querySelectorAll('.mobile-menu-links a');
+    
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+    
+    mobileClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Tab switching
+    let currentTab = 0;
+    let autoSwitch = true;
+    let switchInterval;
+    
+    function switchTab(index) {
+      currentTab = index;
+      autoSwitch = false;
+      
+      // Update tab buttons
+      document.querySelectorAll('.tab').forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+      });
+      
+      // Update content
+      document.querySelectorAll('.tab-item').forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+      
+      // Reset auto-switch timer
+      clearInterval(switchInterval);
+      switchInterval = setInterval(autoSwitchTab, 5000);
+    }
+    
+    function autoSwitchTab() {
+      currentTab = (currentTab + 1) % 3;
+      switchTab(currentTab);
+      autoSwitch = true;
+    }
+    
+    // Initialize auto-switch
+    switchInterval = setInterval(autoSwitchTab, 5000);
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') !== '#') {
+          e.preventDefault();
+          
+          const target = document.querySelector(this.getAttribute('href'));
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Header scroll effect
+    const header = document.querySelector('header');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.style.boxShadow = 'var(--shadow)';
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+      } else {
+        header.style.boxShadow = 'var(--shadow-sm)';
+        header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+      }
+    });
+  </script>
+</body>
+</html>

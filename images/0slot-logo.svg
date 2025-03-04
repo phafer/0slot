@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <!-- 渐变定义 -->
+  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#6366f1" />
+    <stop offset="100%" stop-color="#4f46e5" />
+  </linearGradient>
+  
+  <!-- Logo文字 -->
+  <text font-family="Inter, sans-serif" font-weight="700" dominant-baseline="middle">
+    <tspan x="10" y="40" font-size="48" fill="url(#logoGradient)">0</tspan>
+    <tspan x="45" y="40" font-size="48" fill="url(#logoGradient)">Slot</tspan>
+  </text>
+</svg>
