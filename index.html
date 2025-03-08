@@ -702,6 +702,52 @@
       background-clip: text;
       color: transparent;
     }
+
+    .highlighted-container {
+      position: relative;
+      max-width: 800px;
+      margin: 30px 0;
+  }
+  
+  .highlight-box {
+      background-color: rgba(78, 42, 255, 0.8);
+      border: 0px solid #ffffff;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(8px);
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .highlight-box::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: linear-gradient(45deg, #ff5e62, #ff9966);
+      z-index: -1;
+      filter: blur(20px);
+      opacity: 0.4;
+      animation: pulse 3s infinite;
+  }
+  
+  .highlight-text {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      color: #ffffff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .highlight-emphasis {
+      color: #ffdd00;
+      font-weight: 700;
+  }
+
   </style>
 </head>
 <body>
@@ -1011,10 +1057,23 @@
           <a href="<?=$customerService?>" class="btn btn-primary">Contact Sales</a>
         </div>
         <p class="small-text">By signing up, you agree to our <a href="#">Terms & Conditions</a></p>
-        <p class="small-text st-contact">
-          <span  style='color: red;font-size: 3vh;'>If you want to create a free account (<strong>try for free in the first week!</strong>), contact sales, or have any inquiries, please contact us via Discord or X.<br><br></span>
+
+        <div class="highlighted-container">
+          <div class="highlight-box">
+              <div class="highlight-text">
+                  If you want to create a free account <span class="highlight-emphasis">(try for free in the first week!)</span>, contact sales, or have any inquiries, please contact us via Discord or X.
+              </div>
+          </div>
+      </div>    
+
+        <p class="small-text st-contact">          
           Discord: <a href="<?=$customerService?>"><?=$customerService?></a><br>
-          X: <a href="https://x.com/0slot_trade">https://x.com/0slot_trade</a>
+          X: <a href="https://x.com/0slot_trade">https://x.com/0slot_trade</a><br>
+
+          Discord username: <strong>kurt0slot</strong><br>
+          <span style='font-size: 2vh;'>If the chat link has expired, please add sales using the username.
+            </span>
+
         </p>
       </div>
     </div>
@@ -1051,7 +1110,7 @@
   <!-- JavaScript -->
   <script>
   // get cs  
-  fetch('https://0slot.trade/get_customer_service.php')
+  fetch('get_customer_service.php')
       .then(response => response.json())
       .then(data => {
           if (data.code === 0) {
